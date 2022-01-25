@@ -1,5 +1,4 @@
--- Gui to Lua
--- Version: 3.2
+-- Fresh Menu by Alan
 
 -- Instances:
 
@@ -17,6 +16,7 @@ local TextButton_3 = Instance.new("TextButton")
 local TextLabel_6 = Instance.new("TextLabel")
 local TextButton_4 = Instance.new("TextButton")
 local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
 local TextButton_5 = Instance.new("TextButton")
 local TextButton_6 = Instance.new("TextButton")
 
@@ -143,23 +143,34 @@ TextButton_4.TextSize = 14.000
 
 TextLabel_7.Parent = Frame
 TextLabel_7.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-TextLabel_7.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_7.BorderSizePixel = 0
-TextLabel_7.Position = UDim2.new(0.329480022, 0, 0.465588987, 0)
-TextLabel_7.Size = UDim2.new(0, 70, 0, 17)
+TextLabel_7.Position = UDim2.new(0.620110989, 0, 0.135458171, 0)
+TextLabel_7.Size = UDim2.new(0, 70, 0, 21)
 TextLabel_7.Font = Enum.Font.SourceSans
-TextLabel_7.Text = "Fov Changer"
-TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel_7.Text = "Misc"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 255, 0)
 TextLabel_7.TextSize = 14.000
+
+TextLabel_8.Parent = Frame
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel_8.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.620110989, 0, 0.313838035, 0)
+TextLabel_8.Size = UDim2.new(0, 70, 0, 17)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "NoClip"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel_8.TextSize = 14.000
 
 TextButton_5.Parent = Frame
 TextButton_5.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 TextButton_5.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_5.BorderSizePixel = 0
-TextButton_5.Position = UDim2.new(0.49329865, 0, 0.461697936, 0)
+TextButton_5.Position = UDim2.new(0.783929646, 0, 0.313838005, 0)
 TextButton_5.Size = UDim2.new(0, 35, 0, 17)
 TextButton_5.Font = Enum.Font.SourceSans
-TextButton_5.Text = "120"
+TextButton_5.Text = "Off"
 TextButton_5.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextButton_5.TextSize = 14.000
 
@@ -174,7 +185,7 @@ TextButton_6.TextSize = 14.000
 
 -- Scripts:
 
-local function PNST_fake_script() -- TextButton.LocalScript 
+local function JAEHJ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	_G.esp = false
@@ -187,7 +198,7 @@ local function PNST_fake_script() -- TextButton.LocalScript
 			local Camera = game:GetService("Workspace").CurrentCamera
 			local Mouse = Player:GetMouse()
 	
-			local function Dist(pointA, pointB) 
+			local function Dist(pointA, pointB)
 				return math.sqrt(math.pow(pointA.X - pointB.X, 2) + math.pow(pointA.Y - pointB.Y, 2))
 			end
 	
@@ -284,8 +295,8 @@ local function PNST_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(PNST_fake_script)()
-local function OAZTX_fake_script() -- Frame.LocalScript 
+coroutine.wrap(JAEHJ_fake_script)()
+local function LFXEW_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local dragger = {}; 
@@ -332,8 +343,8 @@ local function OAZTX_fake_script() -- Frame.LocalScript
 	script.Parent.Draggable = true
 	
 end
-coroutine.wrap(OAZTX_fake_script)()
-local function QOBMY_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(LFXEW_fake_script)()
+local function QWUDKQ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	_G.aimbot = false
@@ -436,8 +447,8 @@ local function QOBMY_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(QOBMY_fake_script)()
-local function MKTI_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(QWUDKQ_fake_script)()
+local function WCCXOQL_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -445,8 +456,8 @@ local function MKTI_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(MKTI_fake_script)()
-local function EOOLAEW_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(WCCXOQL_fake_script)()
+local function WWWGBE_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	_G.silentaim = false
@@ -507,34 +518,51 @@ local function EOOLAEW_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EOOLAEW_fake_script)()
-local function KBCRP_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(WWWGBE_fake_script)()
+local function KWLMM_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
-	_G.fov = false
+	_G.noclip = false
 	script.Parent.MouseButton1Click:Connect(function()
-		if _G.fov == false then
-			_G.fov = true
-			script.Parent.Text = "120"
+		if _G.noclip == false then
+			_G.noclip = true
+			script.Parent.Text = "On"
 			script.Parent.TextColor3 = Color3.fromRGB(136, 255, 0)
-			game.Workspace.CurrentCamera.FieldOfView = 120
+			local player = game.Players.LocalPlayer
+			local mouse = player:GetMouse()
+			local runservice = game:GetService("RunService")
+			local noclip = false
+	
+			local msg = Instance.new("Message", player.PlayerGui)
+			msg.Text = "Noclip Script by PresidentIvan! Press on 'e' to noclip & 't' to destroy this message!"
+	
+			runservice.Stepped:Connect(function()
+				if noclip then
+					player.Character.Humanoid:ChangeState(11)
+				end
+			end)
+	
+			mouse.KeyDown:Connect(function(key)
+				if key == "t" then
+					msg:Destroy()
+				end
+			end)
+	
+			mouse.KeyDown:Connect(function(key)
+				if key == "e" then
+					noclip = true
+					player.Character.Humanoid:ChangeState(11)
+				end
+			end)
 		else
-			_G.fov = false
-			script.Parent.Text = "120"
+			_G.noclip = false
+			script.Parent.Text = "Off"
 			script.Parent.TextColor3 = Color3.fromRGB(255, 0, 4)
 		end
 	end)
-	
-	
-	
-	
-	
-	
-	
-	
 end
-coroutine.wrap(KBCRP_fake_script)()
-local function SVYT_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(KWLMM_fake_script)()
+local function JZNPKVD_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	local Frame = script.Parent.Parent.Frame
@@ -544,4 +572,4 @@ local function SVYT_fake_script() -- TextButton_6.LocalScript
 	end)
 	
 end
-coroutine.wrap(SVYT_fake_script)()
+coroutine.wrap(JZNPKVD_fake_script)()
