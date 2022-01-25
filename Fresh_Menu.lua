@@ -1,4 +1,5 @@
--- Fresh Menu by Alan
+-- Fresh Menu By Alan
+
 
 -- Instances:
 
@@ -185,7 +186,7 @@ TextButton_6.TextSize = 14.000
 
 -- Scripts:
 
-local function JAEHJ_fake_script() -- TextButton.LocalScript 
+local function BRMHE_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	_G.esp = false
@@ -295,8 +296,8 @@ local function JAEHJ_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JAEHJ_fake_script)()
-local function LFXEW_fake_script() -- Frame.LocalScript 
+coroutine.wrap(BRMHE_fake_script)()
+local function UEQU_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local dragger = {}; 
@@ -343,8 +344,8 @@ local function LFXEW_fake_script() -- Frame.LocalScript
 	script.Parent.Draggable = true
 	
 end
-coroutine.wrap(LFXEW_fake_script)()
-local function QWUDKQ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(UEQU_fake_script)()
+local function LOBZ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	_G.aimbot = false
@@ -447,8 +448,8 @@ local function QWUDKQ_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(QWUDKQ_fake_script)()
-local function WCCXOQL_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(LOBZ_fake_script)()
+local function WUJMZG_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -456,8 +457,8 @@ local function WCCXOQL_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(WCCXOQL_fake_script)()
-local function WWWGBE_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(WUJMZG_fake_script)()
+local function NDRULWB_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	_G.silentaim = false
@@ -518,8 +519,8 @@ local function WWWGBE_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WWWGBE_fake_script)()
-local function KWLMM_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(NDRULWB_fake_script)()
+local function LONI_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	_G.noclip = false
@@ -534,7 +535,7 @@ local function KWLMM_fake_script() -- TextButton_5.LocalScript
 			local noclip = false
 	
 			local msg = Instance.new("Message", player.PlayerGui)
-			msg.Text = "Noclip Script by PresidentIvan! Press on 'e' to noclip & 't' to destroy this message!"
+			msg.Text = "Noclip Script by Alan! Press on 'e' to noclip & 't' to destroy this message!"
 	
 			runservice.Stepped:Connect(function()
 				if noclip then
@@ -561,8 +562,8 @@ local function KWLMM_fake_script() -- TextButton_5.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KWLMM_fake_script)()
-local function JZNPKVD_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(LONI_fake_script)()
+local function UAHOYHE_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	local Frame = script.Parent.Parent.Frame
@@ -572,4 +573,4 @@ local function JZNPKVD_fake_script() -- TextButton_6.LocalScript
 	end)
 	
 end
-coroutine.wrap(JZNPKVD_fake_script)()
+coroutine.wrap(UAHOYHE_fake_script)() 
