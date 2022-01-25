@@ -3,6 +3,7 @@
 
 -- Instances:
 
+local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
@@ -18,10 +19,14 @@ local TextButton_4 = Instance.new("TextButton")
 local TextLabel_7 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
 local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
 
 --Properties:
 
-Frame.Parent = game.StarterGui.ScreenGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.Position = UDim2.new(0.172184139, 0, 0.306306303, 0)
@@ -170,9 +175,18 @@ TextButton_5.Text = "Off"
 TextButton_5.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextButton_5.TextSize = 14.000
 
+TextButton_6.Parent = ScreenGui
+TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.Position = UDim2.new(0, 0, 0.190690696, 0)
+TextButton_6.Size = UDim2.new(0, 60, 0, 29)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "Open"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextButton_6.TextSize = 14.000
+
 -- Scripts:
 
-local function YZZZLIS_fake_script() -- TextButton.LocalScript 
+local function IKZEEW_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	_G.esp = false
@@ -282,8 +296,8 @@ local function YZZZLIS_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YZZZLIS_fake_script)()
-local function XGEI_fake_script() -- Frame.LocalScript 
+coroutine.wrap(IKZEEW_fake_script)()
+local function NICM_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local dragger = {}; 
@@ -330,8 +344,8 @@ local function XGEI_fake_script() -- Frame.LocalScript
 	script.Parent.Draggable = true
 	
 end
-coroutine.wrap(XGEI_fake_script)()
-local function WMVRXMQ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(NICM_fake_script)()
+local function JWAVH_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	_G.aimbot = false
@@ -434,8 +448,8 @@ local function WMVRXMQ_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(WMVRXMQ_fake_script)()
-local function ZEVS_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(JWAVH_fake_script)()
+local function ZYTVV_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -443,8 +457,8 @@ local function ZEVS_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZEVS_fake_script)()
-local function RECZ_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(ZYTVV_fake_script)()
+local function HXLW_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	_G.silentaim = false
@@ -505,14 +519,14 @@ local function RECZ_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RECZ_fake_script)()
-local function PPHX_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(HXLW_fake_script)()
+local function VHJMB_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
-	_G.InfJump = false
+	_G.infjump = false
 	script.Parent.MouseButton1Click:Connect(function()
-		if _G.InfJump == false then
-			_G.InfJump = true
+		if _G.infjump == false then
+			_G.infjump = true
 			script.Parent.Text = "On"
 			script.Parent.TextColor3 = Color3.fromRGB(136, 255, 0)
 			local Player = game:GetService'Players'.LocalPlayer;
@@ -534,10 +548,21 @@ local function PPHX_fake_script() -- TextButton_5.LocalScript
 				end
 			end)
 		else
-			_G.InfJump = false
+			_G.infjump = false
 			script.Parent.Text = "Off"
 			script.Parent.TextColor3 = Color3.fromRGB(255, 0, 4)
 		end
 	end)
 end
-coroutine.wrap(PPHX_fake_script)() 
+coroutine.wrap(VHJMB_fake_script)()
+local function BIFVTJ_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	local Frame = script.Parent.Parent.Frame
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frame.Visible = true
+	end)
+	
+end
+coroutine.wrap(BIFVTJ_fake_script)()
