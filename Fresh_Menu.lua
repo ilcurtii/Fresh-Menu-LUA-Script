@@ -1,9 +1,8 @@
--- Fresh Menu By Alan
+-- Fresh Menu by Alan
 
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
@@ -19,14 +18,10 @@ local TextButton_4 = Instance.new("TextButton")
 local TextLabel_7 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
 local TextButton_5 = Instance.new("TextButton")
-local TextButton_6 = Instance.new("TextButton")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-Frame.Parent = ScreenGui
+Frame.Parent = game.StarterGui.ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.Position = UDim2.new(0.172184139, 0, 0.306306303, 0)
@@ -160,7 +155,7 @@ TextLabel_8.BorderSizePixel = 0
 TextLabel_8.Position = UDim2.new(0.620110989, 0, 0.313838035, 0)
 TextLabel_8.Size = UDim2.new(0, 70, 0, 17)
 TextLabel_8.Font = Enum.Font.SourceSans
-TextLabel_8.Text = "NoClip"
+TextLabel_8.Text = "InfJump"
 TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 0)
 TextLabel_8.TextSize = 14.000
 
@@ -175,18 +170,9 @@ TextButton_5.Text = "Off"
 TextButton_5.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextButton_5.TextSize = 14.000
 
-TextButton_6.Parent = ScreenGui
-TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_6.Position = UDim2.new(0, 0, 0.190690696, 0)
-TextButton_6.Size = UDim2.new(0, 60, 0, 29)
-TextButton_6.Font = Enum.Font.SourceSans
-TextButton_6.Text = "Open"
-TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 0)
-TextButton_6.TextSize = 14.000
-
 -- Scripts:
 
-local function BRMHE_fake_script() -- TextButton.LocalScript 
+local function YZZZLIS_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	_G.esp = false
@@ -296,8 +282,8 @@ local function BRMHE_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BRMHE_fake_script)()
-local function UEQU_fake_script() -- Frame.LocalScript 
+coroutine.wrap(YZZZLIS_fake_script)()
+local function XGEI_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local dragger = {}; 
@@ -344,8 +330,8 @@ local function UEQU_fake_script() -- Frame.LocalScript
 	script.Parent.Draggable = true
 	
 end
-coroutine.wrap(UEQU_fake_script)()
-local function LOBZ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(XGEI_fake_script)()
+local function WMVRXMQ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	_G.aimbot = false
@@ -448,8 +434,8 @@ local function LOBZ_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(LOBZ_fake_script)()
-local function WUJMZG_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(WMVRXMQ_fake_script)()
+local function ZEVS_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -457,8 +443,8 @@ local function WUJMZG_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(WUJMZG_fake_script)()
-local function NDRULWB_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(ZEVS_fake_script)()
+local function RECZ_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	_G.silentaim = false
@@ -519,58 +505,39 @@ local function NDRULWB_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NDRULWB_fake_script)()
-local function LONI_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(RECZ_fake_script)()
+local function PPHX_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
-	_G.noclip = false
+	_G.InfJump = false
 	script.Parent.MouseButton1Click:Connect(function()
-		if _G.noclip == false then
-			_G.noclip = true
+		if _G.InfJump == false then
+			_G.InfJump = true
 			script.Parent.Text = "On"
 			script.Parent.TextColor3 = Color3.fromRGB(136, 255, 0)
-			local player = game.Players.LocalPlayer
-			local mouse = player:GetMouse()
-			local runservice = game:GetService("RunService")
-			local noclip = false
+			local Player = game:GetService'Players'.LocalPlayer;
+			local UIS = game:GetService'UserInputService';
 	
-			local msg = Instance.new("Message", player.PlayerGui)
-			msg.Text = "Noclip Script by Alan! Press on 'e' to noclip & 't' to destroy this message!"
+			_G.JumpHeight = 50;
 	
-			runservice.Stepped:Connect(function()
-				if noclip then
-					player.Character.Humanoid:ChangeState(11)
-				end
-			end)
+			function Action(Object, Function) if Object ~= nil then Function(Object); end end
 	
-			mouse.KeyDown:Connect(function(key)
-				if key == "t" then
-					msg:Destroy()
-				end
-			end)
-	
-			mouse.KeyDown:Connect(function(key)
-				if key == "e" then
-					noclip = true
-					player.Character.Humanoid:ChangeState(11)
+			UIS.InputBegan:connect(function(UserInput)
+				if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+					Action(Player.Character.Humanoid, function(self)
+						if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+							Action(self.Parent.HumanoidRootPart, function(self)
+								self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+							end)
+						end
+					end)
 				end
 			end)
 		else
-			_G.noclip = false
+			_G.InfJump = false
 			script.Parent.Text = "Off"
 			script.Parent.TextColor3 = Color3.fromRGB(255, 0, 4)
 		end
 	end)
 end
-coroutine.wrap(LONI_fake_script)()
-local function UAHOYHE_fake_script() -- TextButton_6.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_6)
-
-	local Frame = script.Parent.Parent.Frame
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Frame.Visible = true
-	end)
-	
-end
-coroutine.wrap(UAHOYHE_fake_script)() 
+coroutine.wrap(PPHX_fake_script)() 
