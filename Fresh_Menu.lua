@@ -19,9 +19,7 @@ local TextButton_4 = Instance.new("TextButton")
 local TextLabel_7 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
 local TextButton_5 = Instance.new("TextButton")
-local TextLabel_9 = Instance.new("TextLabel")
 local TextButton_6 = Instance.new("TextButton")
-local TextButton_7 = Instance.new("TextButton")
 
 --Properties:
 
@@ -62,7 +60,7 @@ TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(0.329480022, 0, 0.317729086, 0)
 TextLabel_2.Size = UDim2.new(0, 70, 0, 17)
 TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "Esp"
+TextLabel_2.Text = "EspBox"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 0)
 TextLabel_2.TextSize = 14.000
 
@@ -177,40 +175,18 @@ TextButton_5.Text = "Off"
 TextButton_5.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextButton_5.TextSize = 14.000
 
-TextLabel_9.Parent = Frame
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-TextLabel_9.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.BorderSizePixel = 0
-TextLabel_9.Position = UDim2.new(0.329480022, 0, 0.461697936, 0)
-TextLabel_9.Size = UDim2.new(0, 70, 0, 17)
-TextLabel_9.Font = Enum.Font.SourceSans
-TextLabel_9.Text = "New"
-TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 0)
-TextLabel_9.TextSize = 14.000
-
-TextButton_6.Parent = Frame
-TextButton_6.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
-TextButton_6.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_6.BorderSizePixel = 0
-TextButton_6.Position = UDim2.new(0.49329865, 0, 0.461697936, 0)
-TextButton_6.Size = UDim2.new(0, 35, 0, 17)
+TextButton_6.Parent = ScreenGui
+TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.Position = UDim2.new(0, 0, 0.190690696, 0)
+TextButton_6.Size = UDim2.new(0, 60, 0, 29)
 TextButton_6.Font = Enum.Font.SourceSans
-TextButton_6.Text = "Off"
-TextButton_6.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_6.Text = "Open"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 0)
 TextButton_6.TextSize = 14.000
-
-TextButton_7.Parent = ScreenGui
-TextButton_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_7.Position = UDim2.new(0, 0, 0.190690696, 0)
-TextButton_7.Size = UDim2.new(0, 60, 0, 29)
-TextButton_7.Font = Enum.Font.SourceSans
-TextButton_7.Text = "Open"
-TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 0)
-TextButton_7.TextSize = 14.000
 
 -- Scripts:
 
-local function SAUQJDG_fake_script() -- TextButton.LocalScript 
+local function SYGIA_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	_G.esp = false
@@ -320,8 +296,8 @@ local function SAUQJDG_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SAUQJDG_fake_script)()
-local function TIMFK_fake_script() -- Frame.LocalScript 
+coroutine.wrap(SYGIA_fake_script)()
+local function YYGYP_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local dragger = {}; 
@@ -368,8 +344,8 @@ local function TIMFK_fake_script() -- Frame.LocalScript
 	script.Parent.Draggable = true
 	
 end
-coroutine.wrap(TIMFK_fake_script)()
-local function DYKX_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(YYGYP_fake_script)()
+local function DBRCMB_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	_G.aimbot = false
@@ -472,8 +448,8 @@ local function DYKX_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(DYKX_fake_script)()
-local function IUGFI_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(DBRCMB_fake_script)()
+local function REXN_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -481,8 +457,8 @@ local function IUGFI_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(IUGFI_fake_script)()
-local function NPMG_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(REXN_fake_script)()
+local function ZQEB_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	_G.silentaim = false
@@ -543,8 +519,8 @@ local function NPMG_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NPMG_fake_script)()
-local function SHRZGWZ_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(ZQEB_fake_script)()
+local function GMRYR_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	_G.infjump = false
@@ -578,15 +554,9 @@ local function SHRZGWZ_fake_script() -- TextButton_5.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SHRZGWZ_fake_script)()
-local function VCHSUEV_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(GMRYR_fake_script)()
+local function OOGHQIA_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
-
-	
-end
-coroutine.wrap(VCHSUEV_fake_script)()
-local function MGADNQL_fake_script() -- TextButton_7.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_7)
 
 	local Frame = script.Parent.Parent.Frame
 	
@@ -595,4 +565,4 @@ local function MGADNQL_fake_script() -- TextButton_7.LocalScript
 	end)
 	
 end
-coroutine.wrap(MGADNQL_fake_script)()
+coroutine.wrap(OOGHQIA_fake_script)() 
