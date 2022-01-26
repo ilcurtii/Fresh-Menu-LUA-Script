@@ -22,7 +22,9 @@ local TextButton_5 = Instance.new("TextButton")
 local TextLabel_9 = Instance.new("TextLabel")
 local TextLabel_10 = Instance.new("TextLabel")
 local TextButton_6 = Instance.new("TextButton")
+local TextLabel_11 = Instance.new("TextLabel")
 local TextButton_7 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
 
 --Properties:
 
@@ -211,18 +213,40 @@ TextButton_6.Text = "Off"
 TextButton_6.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextButton_6.TextSize = 14.000
 
-TextButton_7.Parent = ScreenGui
-TextButton_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_7.Position = UDim2.new(0, 0, 0.190690696, 0)
-TextButton_7.Size = UDim2.new(0, 60, 0, 29)
+TextLabel_11.Parent = Frame
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel_11.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0.620110989, 0, 0.465588987, 0)
+TextLabel_11.Size = UDim2.new(0, 70, 0, 17)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = "AntiAim"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel_11.TextSize = 14.000
+
+TextButton_7.Parent = Frame
+TextButton_7.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextButton_7.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.BorderSizePixel = 0
+TextButton_7.Position = UDim2.new(0.783929646, 0, 0.465588987, 0)
+TextButton_7.Size = UDim2.new(0, 35, 0, 17)
 TextButton_7.Font = Enum.Font.SourceSans
-TextButton_7.Text = "Open"
-TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextButton_7.Text = "Off"
+TextButton_7.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextButton_7.TextSize = 14.000
+
+TextButton_8.Parent = ScreenGui
+TextButton_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.Position = UDim2.new(0, 0, 0.190690696, 0)
+TextButton_8.Size = UDim2.new(0, 60, 0, 29)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = "Open"
+TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextButton_8.TextSize = 14.000
 
 -- Scripts:
 
-local function TCDR_fake_script() -- TextButton.LocalScript 
+local function EQRJNFH_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	_G.esp = false
@@ -332,8 +356,8 @@ local function TCDR_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TCDR_fake_script)()
-local function DUECULT_fake_script() -- Frame.LocalScript 
+coroutine.wrap(EQRJNFH_fake_script)()
+local function OEHZMS_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local dragger = {}; 
@@ -380,8 +404,8 @@ local function DUECULT_fake_script() -- Frame.LocalScript
 	script.Parent.Draggable = true
 	
 end
-coroutine.wrap(DUECULT_fake_script)()
-local function XAWBNN_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(OEHZMS_fake_script)()
+local function COFWCZ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	_G.aimbot = false
@@ -484,8 +508,8 @@ local function XAWBNN_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(XAWBNN_fake_script)()
-local function ELLGQ_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(COFWCZ_fake_script)()
+local function ZEHK_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -493,8 +517,8 @@ local function ELLGQ_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(ELLGQ_fake_script)()
-local function KHPGPD_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(ZEHK_fake_script)()
+local function BHIGYAK_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	_G.silentaim = false
@@ -555,8 +579,8 @@ local function KHPGPD_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KHPGPD_fake_script)()
-local function ERLAB_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(BHIGYAK_fake_script)()
+local function XFJKR_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	_G.infjump = false
@@ -590,8 +614,8 @@ local function ERLAB_fake_script() -- TextButton_5.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ERLAB_fake_script)()
-local function BTYWGH_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(XFJKR_fake_script)()
+local function KJGUE_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	_G.glowesp = false
@@ -733,9 +757,85 @@ local function BTYWGH_fake_script() -- TextButton_6.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BTYWGH_fake_script)()
-local function BACY_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(KJGUE_fake_script)()
+local function JHFBX_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
+
+	_G.antiaim = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.antiaim == false then
+			_G.antiaim = true
+			script.Parent.Text = "On"
+			script.Parent.TextColor3 = Color3.fromRGB(136, 255, 0)
+			local PlayerTable=getupvalue(require(game.ReplicatedStorage.TS).Characters.GetCharacter,1)
+			local IsAlive=function()
+				if PlayerTable[game.Players.LocalPlayer]then
+					if PlayerTable[game.Players.LocalPlayer].Parent==game.Workspace.Characters then
+						if PlayerTable[game.Players.LocalPlayer]:FindFirstChild("Root")then
+							return true
+						end
+					end
+				end
+				return false
+			end
+			local onspawn
+			local oldroot
+			local newroot
+			game.RunService.RenderStepped:Connect(function()
+				if IsAlive()then
+					if not onspawn then
+						onspawn=true
+						oldroot=PlayerTable[game.Players.LocalPlayer].Root
+						oldroot.CanCollide=false
+						newroot=PlayerTable[game.Players.LocalPlayer].Root:Clone()
+						newroot.CanCollide=true
+						newroot.Name="NewRoot"
+						newroot.Parent=PlayerTable[game.Players.LocalPlayer]
+					end
+				else
+					if onspawn then
+						onspawn=false
+						oldroot=nil
+						newroot=nil
+					end
+				end
+			end)
+			local index
+			local newindex
+			index=hookmetamethod(game,"__index",function(a,b)
+				if oldroot and newroot then
+					if a==oldroot then
+						a=newroot
+					end
+				end
+				return index(a,b)
+			end)
+			newindex=hookmetamethod(game,"__newindex",function(a,b,c)
+				if oldroot and newroot then
+					if a==oldroot then
+						if tostring(b)=="CFrame"then
+							newroot.CFrame=c
+							c=c*CFrame.Angles(math.rad(-90),0,0)+Vector3.new(0,-7.5,0)
+						elseif tostring(b)=="Velocity"then
+							newroot.Velocity=c
+							c=Vector3.new()
+						else
+							a=newroot
+						end
+					end
+				end
+				return newindex(a,b,c)
+			end)
+		else
+			_G.antiaim = false
+			script.Parent.Text = "Off"
+			script.Parent.TextColor3 = Color3.fromRGB(255, 0, 4)
+		end
+	end)
+end
+coroutine.wrap(JHFBX_fake_script)()
+local function YFGL_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
 
 	local Frame = script.Parent.Parent.Frame
 	
@@ -744,4 +844,4 @@ local function BACY_fake_script() -- TextButton_7.LocalScript
 	end)
 	
 end
-coroutine.wrap(BACY_fake_script)()
+coroutine.wrap(YFGL_fake_script)() 
