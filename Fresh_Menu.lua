@@ -19,7 +19,9 @@ local TextButton_4 = Instance.new("TextButton")
 local TextLabel_7 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
 local TextButton_5 = Instance.new("TextButton")
+local TextLabel_9 = Instance.new("TextLabel")
 local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
 
 --Properties:
 
@@ -175,18 +177,40 @@ TextButton_5.Text = "Off"
 TextButton_5.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextButton_5.TextSize = 14.000
 
-TextButton_6.Parent = ScreenGui
-TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_6.Position = UDim2.new(0, 0, 0.190690696, 0)
-TextButton_6.Size = UDim2.new(0, 60, 0, 29)
+TextLabel_9.Parent = Frame
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel_9.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.329480022, 0, 0.461697936, 0)
+TextLabel_9.Size = UDim2.new(0, 70, 0, 17)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "New"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel_9.TextSize = 14.000
+
+TextButton_6.Parent = Frame
+TextButton_6.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextButton_6.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.BorderSizePixel = 0
+TextButton_6.Position = UDim2.new(0.49329865, 0, 0.461697936, 0)
+TextButton_6.Size = UDim2.new(0, 35, 0, 17)
 TextButton_6.Font = Enum.Font.SourceSans
-TextButton_6.Text = "Open"
-TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextButton_6.Text = "Off"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextButton_6.TextSize = 14.000
+
+TextButton_7.Parent = ScreenGui
+TextButton_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.Position = UDim2.new(0, 0, 0.190690696, 0)
+TextButton_7.Size = UDim2.new(0, 60, 0, 29)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "Open"
+TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextButton_7.TextSize = 14.000
 
 -- Scripts:
 
-local function IKZEEW_fake_script() -- TextButton.LocalScript 
+local function SAUQJDG_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	_G.esp = false
@@ -296,8 +320,8 @@ local function IKZEEW_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IKZEEW_fake_script)()
-local function NICM_fake_script() -- Frame.LocalScript 
+coroutine.wrap(SAUQJDG_fake_script)()
+local function TIMFK_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local dragger = {}; 
@@ -344,8 +368,8 @@ local function NICM_fake_script() -- Frame.LocalScript
 	script.Parent.Draggable = true
 	
 end
-coroutine.wrap(NICM_fake_script)()
-local function JWAVH_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(TIMFK_fake_script)()
+local function DYKX_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	_G.aimbot = false
@@ -448,8 +472,8 @@ local function JWAVH_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(JWAVH_fake_script)()
-local function ZYTVV_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(DYKX_fake_script)()
+local function IUGFI_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -457,8 +481,8 @@ local function ZYTVV_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZYTVV_fake_script)()
-local function HXLW_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(IUGFI_fake_script)()
+local function NPMG_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	_G.silentaim = false
@@ -519,8 +543,8 @@ local function HXLW_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(HXLW_fake_script)()
-local function VHJMB_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(NPMG_fake_script)()
+local function SHRZGWZ_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	_G.infjump = false
@@ -554,9 +578,15 @@ local function VHJMB_fake_script() -- TextButton_5.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VHJMB_fake_script)()
-local function BIFVTJ_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(SHRZGWZ_fake_script)()
+local function VCHSUEV_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
+
+	
+end
+coroutine.wrap(VCHSUEV_fake_script)()
+local function MGADNQL_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
 
 	local Frame = script.Parent.Parent.Frame
 	
@@ -565,4 +595,4 @@ local function BIFVTJ_fake_script() -- TextButton_6.LocalScript
 	end)
 	
 end
-coroutine.wrap(BIFVTJ_fake_script)()
+coroutine.wrap(MGADNQL_fake_script)()
