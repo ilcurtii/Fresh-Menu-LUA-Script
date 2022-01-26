@@ -20,7 +20,9 @@ local TextLabel_7 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
 local TextButton_5 = Instance.new("TextButton")
 local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
 local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
 
 --Properties:
 
@@ -187,18 +189,40 @@ TextLabel_9.Text = "Arsenal"
 TextLabel_9.TextColor3 = Color3.fromRGB(255, 85, 0)
 TextLabel_9.TextSize = 14.000
 
-TextButton_6.Parent = ScreenGui
-TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_6.Position = UDim2.new(0, 0, 0.190690696, 0)
-TextButton_6.Size = UDim2.new(0, 60, 0, 29)
+TextLabel_10.Parent = Frame
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel_10.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0.329480022, 0, 0.465588987, 0)
+TextLabel_10.Size = UDim2.new(0, 70, 0, 17)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "GlowEsp"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel_10.TextSize = 14.000
+
+TextButton_6.Parent = Frame
+TextButton_6.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextButton_6.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.BorderSizePixel = 0
+TextButton_6.Position = UDim2.new(0.49329865, 0, 0.461697936, 0)
+TextButton_6.Size = UDim2.new(0, 35, 0, 17)
 TextButton_6.Font = Enum.Font.SourceSans
-TextButton_6.Text = "Open"
-TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextButton_6.Text = "Off"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextButton_6.TextSize = 14.000
+
+TextButton_7.Parent = ScreenGui
+TextButton_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.Position = UDim2.new(0, 0, 0.190690696, 0)
+TextButton_7.Size = UDim2.new(0, 60, 0, 29)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "Open"
+TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextButton_7.TextSize = 14.000
 
 -- Scripts:
 
-local function TNFLIN_fake_script() -- TextButton.LocalScript 
+local function TCDR_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	_G.esp = false
@@ -308,8 +332,8 @@ local function TNFLIN_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TNFLIN_fake_script)()
-local function IERAL_fake_script() -- Frame.LocalScript 
+coroutine.wrap(TCDR_fake_script)()
+local function DUECULT_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local dragger = {}; 
@@ -356,8 +380,8 @@ local function IERAL_fake_script() -- Frame.LocalScript
 	script.Parent.Draggable = true
 	
 end
-coroutine.wrap(IERAL_fake_script)()
-local function MJWOBQ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(DUECULT_fake_script)()
+local function XAWBNN_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	_G.aimbot = false
@@ -460,8 +484,8 @@ local function MJWOBQ_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(MJWOBQ_fake_script)()
-local function FDLNFQ_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(XAWBNN_fake_script)()
+local function ELLGQ_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -469,8 +493,8 @@ local function FDLNFQ_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(FDLNFQ_fake_script)()
-local function FHGSR_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(ELLGQ_fake_script)()
+local function KHPGPD_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	_G.silentaim = false
@@ -531,8 +555,8 @@ local function FHGSR_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FHGSR_fake_script)()
-local function MFJXR_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(KHPGPD_fake_script)()
+local function ERLAB_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	_G.infjump = false
@@ -566,9 +590,152 @@ local function MFJXR_fake_script() -- TextButton_5.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MFJXR_fake_script)()
-local function JSDB_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(ERLAB_fake_script)()
+local function BTYWGH_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
+
+	_G.glowesp = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.glowesp == false then
+			_G.glowesp = true
+			script.Parent.Text = "On"
+			script.Parent.TextColor3 = Color3.fromRGB(136, 255, 0)
+			local dwEntities = game:GetService("Players")
+			local dwLocalPlayer = dwEntities.LocalPlayer 
+			local dwRunService = game:GetService("RunService")
+	
+			local settings_tbl = {
+				ESP_Enabled = true,
+				ESP_TeamCheck = false,
+				Chams = true,
+				Chams_Color = Color3.fromRGB(255, 255, 255),
+				Chams_Transparency = 0.1,
+				Chams_Glow_Color = Color3.fromRGB(255, 0, 0)
+			}
+	
+			function destroy_chams(char)
+	
+				for k,v in next, char:GetChildren() do 
+	
+					if v:IsA("BasePart") and v.Transparency ~= 1 then
+	
+						if v:FindFirstChild("Glow") and 
+							v:FindFirstChild("Chams") then
+	
+							v.Glow:Destroy()
+							v.Chams:Destroy() 
+	
+						end 
+	
+					end 
+	
+				end 
+	
+			end
+	
+			dwRunService.Heartbeat:Connect(function()
+	
+				if settings_tbl.ESP_Enabled then
+	
+					for k,v in next, dwEntities:GetPlayers() do 
+	
+						if v ~= dwLocalPlayer then
+	
+							if v.Character and
+								v.Character:FindFirstChild("HumanoidRootPart") and 
+								v.Character:FindFirstChild("Humanoid") and 
+								v.Character:FindFirstChild("Humanoid").Health ~= 0 then
+	
+								if settings_tbl.ESP_TeamCheck == false then
+	
+									local char = v.Character 
+	
+									for k,b in next, char:GetChildren() do 
+	
+										if b:IsA("BasePart") and 
+											b.Transparency ~= 1 then
+	
+											if settings_tbl.Chams then
+	
+												if not b:FindFirstChild("Glow") and
+													not b:FindFirstChild("Chams") then
+	
+													local chams_box = Instance.new("BoxHandleAdornment", b)
+													chams_box.Name = "Chams"
+													chams_box.AlwaysOnTop = true 
+													chams_box.ZIndex = 4 
+													chams_box.Adornee = b 
+													chams_box.Color3 = settings_tbl.Chams_Color
+													chams_box.Transparency = settings_tbl.Chams_Transparency
+													chams_box.Size = b.Size + Vector3.new(0.02, 0.02, 0.02)
+	
+													local glow_box = Instance.new("BoxHandleAdornment", b)
+													glow_box.Name = "Glow"
+													glow_box.AlwaysOnTop = false 
+													glow_box.ZIndex = 3 
+													glow_box.Adornee = b 
+													glow_box.Color3 = settings_tbl.Chams_Glow_Color
+													glow_box.Size = chams_box.Size + Vector3.new(0.13, 0.13, 0.13)
+	
+												end
+	
+											else
+	
+												destroy_chams(char)
+	
+											end
+	
+										end
+	
+									end
+	
+								else
+	
+									if v.Team == dwLocalPlayer.Team then
+										destroy_chams(v.Character)
+									end
+	
+								end
+	
+							else
+	
+								destroy_chams(v.Character)
+	
+							end
+	
+						end
+	
+					end
+	
+				else 
+	
+					for k,v in next, dwEntities:GetPlayers() do 
+	
+						if v ~= dwLocalPlayer and 
+							v.Character and 
+							v.Character:FindFirstChild("HumanoidRootPart") and 
+							v.Character:FindFirstChild("Humanoid") and 
+							v.Character:FindFirstChild("Humanoid").Health ~= 0 then
+	
+							destroy_chams(v.Character)
+	
+						end
+	
+					end
+	
+				end
+	
+			end)
+		else
+			_G.glowesp = false
+			script.Parent.Text = "Off"
+			script.Parent.TextColor3 = Color3.fromRGB(255, 0, 4)
+		end
+	end)
+end
+coroutine.wrap(BTYWGH_fake_script)()
+local function BACY_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
 
 	local Frame = script.Parent.Parent.Frame
 	
@@ -577,4 +744,4 @@ local function JSDB_fake_script() -- TextButton_6.LocalScript
 	end)
 	
 end
-coroutine.wrap(JSDB_fake_script)()
+coroutine.wrap(BACY_fake_script)()
