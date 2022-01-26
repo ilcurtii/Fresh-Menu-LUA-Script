@@ -246,7 +246,7 @@ TextButton_8.TextSize = 14.000
 
 -- Scripts:
 
-local function EQRJNFH_fake_script() -- TextButton.LocalScript 
+local function KBOYKC_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	_G.esp = false
@@ -356,8 +356,8 @@ local function EQRJNFH_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EQRJNFH_fake_script)()
-local function OEHZMS_fake_script() -- Frame.LocalScript 
+coroutine.wrap(KBOYKC_fake_script)()
+local function ZZRKAZ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local dragger = {}; 
@@ -404,8 +404,8 @@ local function OEHZMS_fake_script() -- Frame.LocalScript
 	script.Parent.Draggable = true
 	
 end
-coroutine.wrap(OEHZMS_fake_script)()
-local function COFWCZ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(ZZRKAZ_fake_script)()
+local function RGPG_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	_G.aimbot = false
@@ -508,8 +508,8 @@ local function COFWCZ_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(COFWCZ_fake_script)()
-local function ZEHK_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(RGPG_fake_script)()
+local function WXWH_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -517,8 +517,8 @@ local function ZEHK_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZEHK_fake_script)()
-local function BHIGYAK_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(WXWH_fake_script)()
+local function CJQQC_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	_G.silentaim = false
@@ -579,8 +579,8 @@ local function BHIGYAK_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BHIGYAK_fake_script)()
-local function XFJKR_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(CJQQC_fake_script)()
+local function PAMS_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	_G.infjump = false
@@ -614,8 +614,8 @@ local function XFJKR_fake_script() -- TextButton_5.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XFJKR_fake_script)()
-local function KJGUE_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(PAMS_fake_script)()
+local function IUIKOZG_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	_G.glowesp = false
@@ -757,8 +757,8 @@ local function KJGUE_fake_script() -- TextButton_6.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KJGUE_fake_script)()
-local function JHFBX_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(IUIKOZG_fake_script)()
+local function ZKUI_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	_G.antiaim = false
@@ -767,6 +767,8 @@ local function JHFBX_fake_script() -- TextButton_7.LocalScript
 			_G.antiaim = true
 			script.Parent.Text = "On"
 			script.Parent.TextColor3 = Color3.fromRGB(136, 255, 0)
+			_G.Invisible_Baker=true
+			if _G.KnifeAura_Baker then game:Shutdown()end
 			local PlayerTable=getupvalue(require(game.ReplicatedStorage.TS).Characters.GetCharacter,1)
 			local IsAlive=function()
 				if PlayerTable[game.Players.LocalPlayer]then
@@ -833,8 +835,8 @@ local function JHFBX_fake_script() -- TextButton_7.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JHFBX_fake_script)()
-local function YFGL_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(ZKUI_fake_script)()
+local function PVQFRW_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	local Frame = script.Parent.Parent.Frame
@@ -844,4 +846,4 @@ local function YFGL_fake_script() -- TextButton_8.LocalScript
 	end)
 	
 end
-coroutine.wrap(YFGL_fake_script)() 
+coroutine.wrap(PVQFRW_fake_script)() 
